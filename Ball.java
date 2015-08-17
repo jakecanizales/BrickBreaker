@@ -11,13 +11,13 @@ public class Ball extends GameObject{
 	
 	public void paint(Graphics page)
 	{
-//		Random gen = new Random();
-//		int r = gen.nextInt(255);
-//		int g = gen.nextInt(255);
-//		int b = gen.nextInt(255);
-//		
-//		page.setColor(new Color(r, g, b));
-		page.setColor(Color.DARK_GRAY);
+		Random gen = new Random();
+		int r = gen.nextInt(255);
+		int g = gen.nextInt(255);
+		int b = gen.nextInt(255);
+		
+		page.setColor(new Color(r, g, b));
+//		page.setColor(Color.DARK_GRAY);
 		page.fillOval(x, y, width, height);
 	}
 }
